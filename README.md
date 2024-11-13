@@ -3,9 +3,12 @@ My personal configuration of hyprland stored in a stow-able format
 
 ### Screenshots
 ![showcase image](https://github.com/user-attachments/assets/411c89ba-7b30-4fbb-8c59-5ce3228da5f4)
-![blank workspace](https://github.com/user-attachments/assets/718bbe15-6bec-4519-9930-22a3b54c45be)
-![sddm showcase](https://github.com/user-attachments/assets/85c14f76-28ae-45f8-9f6d-da835cff10f4)
-![wlogout showcase](https://github.com/user-attachments/assets/edfda495-f075-4082-aac2-9774e0861f45)
+<details>
+  <summary>More screenshots</summary>
+  ![blank workspace](https://github.com/user-attachments/assets/718bbe15-6bec-4519-9930-22a3b54c45be)
+  ![sddm showcase](https://github.com/user-attachments/assets/85c14f76-28ae-45f8-9f6d-da835cff10f4)
+  ![wlogout showcase](https://github.com/user-attachments/assets/edfda495-f075-4082-aac2-9774e0861f45)
+</details><br>
 
 
 ### Installation:
