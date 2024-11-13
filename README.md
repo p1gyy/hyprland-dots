@@ -12,8 +12,10 @@ My personal configuration of hyprland stored in a stow-able format
 
 
 ### Installation:
-<p>NOTE: SDDM does not support symlinks for themes, you have to manually copy the theme to the correct directory</p>
-<p>If there already is a .conf file in /etc/sddm.conf.d, delete it before copying sddm.conf.</p>
+**NOTES:**
+* SDDM does not support symlinks for themes, you have to manually copy the theme to the correct directory
+* If there already is a .conf file in /etc/sddm.conf.d, delete it before copying sddm.conf.
+* This installation guide is made to work with arch, but should also work in other distros with some modification
 
 ```bash
 sudo pacman -S hyprland hyprlock hyprpaper kitty waybar wofi sddm stow polkit-gnome ttf-terminess-nerd adw-gtk-theme
