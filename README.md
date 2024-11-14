@@ -17,6 +17,10 @@ My personal configuration of hyprland stored in a stow-able format
 ```bash
 sudo pacman -S hyprland hyprlock hyprpaper kitty waybar wofi sddm stow polkit-gnome ttf-terminess-nerd adw-gtk-theme
 yay -S wlogout hyprshot
+```
+
+```bash
+cd ~
 git clone https://github.com/p1gyy/hyprland-dots.git
 cd hyprland-dots
 stow config
