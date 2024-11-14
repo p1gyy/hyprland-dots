@@ -12,10 +12,7 @@ My personal configuration of hyprland stored in a stow-able format
 
 
 ### Installation:
-**NOTES:**
-* SDDM does not support symlinks for themes, you have to manually copy the theme to the correct directory
-* If there already is a .conf file in /etc/sddm.conf.d, delete it before copying sddm.conf.
-* This installation guide is made to work with arch, but should also work in other distros with some modification
+<p>This installation guide is made to work with arch, but should also work in other distros with modification to the pacman commands</p>
 
 ```bash
 sudo pacman -S hyprland hyprlock hyprpaper kitty waybar wofi sddm stow polkit-gnome ttf-terminess-nerd adw-gtk-theme
@@ -23,11 +20,33 @@ yay -S wlogout hyprshot
 git clone https://github.com/p1gyy/hyprland-dots.git
 cd hyprland-dots
 stow config
-
-cd sddm
-sudo cp -r ./sddm-theme /usr/share/sddm/themes/sddm-theme
-sudo cp ./sddm.conf /etc/sddm.conf.d/sddm.conf
 ```
+<hr><br>
+
+### SDDM theme
+<p>SDDM does not support symlinks for themes, you have to copy the theme to the correct directory manually</p>
+
+```bash
+cd sddm
+sudo cp -r ./sddm-theme /usr/share/sddm/themes/sddm-theme-custom
+```
+<br>
+
+<p>Edit your SDDM configuration file to apply the theme</p>
+
+> The sddm.conf file may be named differently depending on what desktop environments you previously had installed, make sure you are editing your existing configuration and not creating a new file.
+
+```bash
+sudo nano /etc/sddm.conf.d/sddm.conf
+```
+
+<p>While in your editor, modify, or add this section to your SDDM config</p>
+
+```
+[Theme]
+Current=sddm-theme-custom
+```
+<hr><br>
 
 ### Firefox theme:
 1. Install the [firefox color extension](https://addons.mozilla.org/en-US/firefox/addon/firefox-color/)
