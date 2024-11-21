@@ -133,8 +133,8 @@ button:hover {
 	color: #a3d4c6;
     transition: all 0.2s linear;
     margin: 0px;
-    padding-left: 3px;
-    padding-right: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 #workspaces button.active, #workspaces button:hover {
     background-color: #83ab80;
