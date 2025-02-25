@@ -1,3 +1,4 @@
+
 * {
     /* `otf-font-awesome` is required to be installed for icons */
     font-family: Terminess Nerd Font;
@@ -92,6 +93,8 @@ button:hover {
 #scratchpad,
 #power-profiles-daemon,
 #bluetooth,
+#user,
+#custom-wlogout,
 #mpd {
     padding: 0 10px;
     color: #ffffff;
@@ -107,6 +110,11 @@ button:hover {
     font-weight: bold;
 }
 
+#custom-wlogout {
+    color: rgb(9, 132, 189);
+    font-size: 16px;
+}
+
 #custom-right-arrow-dark,
 #custom-left-arrow-dark {
 	color: #1D241D;
@@ -114,7 +122,7 @@ button:hover {
     margin: 0px;
     padding: 0px;
     margin-top: 4px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 #custom-right-arrow-light,
 #custom-left-arrow-light {
@@ -123,17 +131,17 @@ button:hover {
     margin: 0px;
     padding: 0px;
     margin-top: 4px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 #window,
 #workspaces {
-    margin: 0 4px;
+    margin: 0 0px;
     background: #1D241D;
     margin-right: 0px;
     margin-top: 4px;
     color: #a3d4c6;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
 }
 
 #workspaces button {
@@ -230,4 +238,35 @@ button:hover {
 #privacy-item {
     padding: 0 5px;
     color: white;
+}
+
+#taskbar {
+    padding: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    padding: 0 10px;
+    color: #ffffff;
+    margin-top: 0px;
+    background-color: #1D241D;
+    color: #a3d4c6;
+    margin-bottom: 0px;
+}
+
+#taskbar button {
+	min-width: 100px;
+    color: #a3d4c6;
+	transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    border-bottom: 0px;
+    padding-left: 5px;
+    margin-right: 5px;
+}
+
+#taskbar button.active {
+  background: #83ab80;
+  color: #1D241D;
+}
+
+window#waybar.bar2 {
+    background-color: rgba(43, 48, 59, 0);
 }
