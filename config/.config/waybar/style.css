@@ -267,7 +267,7 @@ button:hover {
 }
 
 window#waybar.bar2 {
-    background-color: rgba(29, 36, 29, 0.7);
+    background-color: rgba(29, 36, 29, 0.8);
     margin-top: 0px;
     margin-bottom: 0px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
