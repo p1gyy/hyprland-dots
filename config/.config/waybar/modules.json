@@ -56,8 +56,8 @@
     },
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "  {:%H:%M  |    %m/%d/%Y}",
-        "format": "  {:%I:%M %p  |    %m/%d/%Y}"
+        "format-alt": "  {:%H:%M  |    %m/%d/%Y} ",
+        "format": "  {:%I:%M %p  |    %m/%d/%Y} "
     },
     "cpu": {
         "format": "{usage}% ",
@@ -165,10 +165,20 @@
 		"format": "",
 		"tooltip": false
 	},
+
+    "custom/right-arrow-dark-big": {
+		"format": "",
+		"tooltip": false
+	},
+    "custom/left-arrow-dark-big": {
+		"format": "",
+		"tooltip": false
+	},
+
     "wlr/taskbar": {
         "format": "{icon} {title:.17}",
-        "icon-size": 16,
-        "spacing": 0,
+        "icon-size": 18,
+        "spacing": 3,
         "on-click-middle": "close",
         "tooltip-format": "{title}",
         "ignore-list": [],
@@ -180,6 +190,11 @@
         "separate-outputs": true,
         "icon": true,
         "icon-size": 16,
-        "rewrite": {"": "desktop"}
+        "rewrite": {"": "desktop"},
+        "max-length": 100
+    },
+    "custom/wlogout": {
+        "format": " 󰣇  ",
+        "on-click": "wlogout"
     }
 }

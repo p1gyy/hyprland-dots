@@ -1,6 +1,6 @@
 // -*- mode: jsonc -*-
 [{
-    "layer": "top", // Waybar at top layer
+    //"layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 25, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
@@ -15,7 +15,7 @@
     ],
     "modules-center": [
         "custom/left-arrow-dark",
-        "clock",
+        "custom/wlogout",
         "custom/right-arrow-dark"
     ],
     "modules-right": [
@@ -67,7 +67,7 @@
     ],
     "modules-center": [
         "custom/left-arrow-dark",
-        "clock",
+        "custom/wlogout",
         "custom/right-arrow-dark"
     ],
     "modules-right": [
@@ -105,7 +105,7 @@
 },
 {
     "position": "bottom",
-    //"layer": "top", // Waybar at top layer
+    "layer": "top", // Waybar at top layer
     // "position": "bottom", // Waybar position (top|bottom|left|right)
     "height": 25, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
@@ -114,24 +114,20 @@
     "name": "bar2",
     "modules-left": [
         "hyprland/workspaces",
-        "hyprland/window",
-        "custom/right-arrow-dark"
+        "wlr/taskbar",
+        "custom/right-arrow-dark-big",
     ],
     "modules-center": [
-        "custom/left-arrow-dark",
-        "custom/wlogout",
-        "custom/right-arrow-dark"
+        "custom/left-arrow-dark-big",
+        "hyprland/window",
+        "custom/right-arrow-dark-big",
     ],
     "modules-right": [
-        "custom/left-arrow-dark",
-        "user"
+        "custom/left-arrow-dark-big",
+        "clock"
     ],
     "hyprland/workspaces": {
         "active-only":  true
-    },
-    "custom/wlogout": {
-        "format": " 󰣇  ",
-        "on-click": "wlogout"
     },
     "custom/media": {
         "format": "{icon} {}",
@@ -146,7 +142,7 @@
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null", // Script in resources/custom_modules folder
     },
     "user": {
-        "format": " {user}  |  piggy-desktop 󰣇  ",
+        "format": " {user} | 󰣇  ",
         "icon": true,
         "height": 16,
         "width": 16

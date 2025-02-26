@@ -242,24 +242,23 @@ button:hover {
 
 #taskbar {
     padding: 0px;
-    padding-left: 5px;
-    padding-right: 5px;
 
-    padding: 0 10px;
     color: #ffffff;
-    margin-top: 0px;
+    margin-top: 4px;
     background-color: #1D241D;
     color: #a3d4c6;
-    margin-bottom: 0px;
+    margin-bottom: 4px;
+    margin-right: 0.1px;
 }
 
 #taskbar button {
-	min-width: 100px;
+	min-width: 130px;
     color: #a3d4c6;
 	transition: all 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
     border-bottom: 0px;
     padding-left: 5px;
-    margin-right: 5px;
+    margin-left: 5px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 #taskbar button.active {
@@ -268,5 +267,30 @@ button:hover {
 }
 
 window#waybar.bar2 {
-    background-color: rgba(43, 48, 59, 0);
+    background-color: rgba(29, 36, 29, 0.7);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+window#waybar.bar2 * {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#custom-right-arrow-dark-big,
+#custom-left-arrow-dark-big {
+	color: #1D241D;
+    font-size: 27px;
+    margin: 0px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#custom-left-arrow-dark-big {
+    margin-left: 20px;
+}
+
+#clock, #window {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
